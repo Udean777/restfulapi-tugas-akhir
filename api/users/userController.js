@@ -62,7 +62,7 @@ export const getUsers = (req, res) => {
   });
 };
 
-export const updateUsers = (req, res) => {
+export const updateUser = (req, res) => {
   const { id } = req.params;
   const { firstName, lastName, email, password } = req.body;
 

@@ -2,7 +2,7 @@ import {
   createUser,
   getUserById,
   getUsers,
-  updateUsers,
+  updateUser,
   deleteUser,
   login,
 } from "./userController.js";
@@ -14,7 +14,7 @@ const router = express.Router();
 router.post("/", createUser);
 router.get("/", getUsers);
 router.get("/:id", getUserById);
-router.patch("/:id", verifyToken, updateUsers);
+router.patch("/:id", verifyToken, updateUser);
 router.delete("/:id", verifyToken, deleteUser);
 router.post("/login", login);
 
